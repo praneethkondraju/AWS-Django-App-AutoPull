@@ -121,7 +121,7 @@ STATIC_URL = '/static/'
 
 # Define additional directories to serve static files from
 STATICFILES_DIRS = [
-    'static'
+    os.path.join(BASE_DIR, 'static'),
 ]
 
 # Default primary key field type
