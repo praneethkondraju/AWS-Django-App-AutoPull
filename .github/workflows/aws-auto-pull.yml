@@ -31,4 +31,4 @@ jobs:
 
       - name: Deploy to EC2
         run: |
-          ssh -o StrictHostKeyChecking=no -i $HOME/.ssh/id_rsa ec2-user@${{ secrets.INSTANCE_IP }} 'cd /home/ec2-user/AWS-Django-AutoPull-EC2/AwsAutoPullDemo && git pull https://praneethkondraju:{{ secrets.PAT }}github.com/praneethkondraju/AWS-Django-AutoPull-EC2.git'
+          ssh -o StrictHostKeyChecking=no -i $HOME/.ssh/id_rsa ec2-user@${{ secrets.INSTANCE_IP }} 'cd /home/ec2-user/AWS-Django-AutoPull-EC2/AwsAutoPullDemo && git pull https://{{ secrets.PAT }}github.com/praneethkondraju/AWS-Django-AutoPull-EC2.git'
