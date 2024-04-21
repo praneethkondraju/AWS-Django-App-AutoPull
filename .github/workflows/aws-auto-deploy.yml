@@ -6,7 +6,7 @@ on:
       - main
 
 env:
-  ECR_REPO_NAME: auto-deploy-demo
+  ECR_REPO_NAME: mysite
 
 jobs:
   build-and-push:
